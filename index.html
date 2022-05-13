@@ -3,7 +3,7 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Three.js - Background Cubemap</title>
+    <title>Weis 3D art</title>
     <style>
     body {
         margin: 0;
@@ -123,10 +123,10 @@ function main() {
   geometry.setIndex(indices);
 
   function makeInstance(geometry, color, x) {
-    const material = new THREE.MeshPhongMaterial({
+    const material = new THREE.MeshNormalMaterial({
       color,
       side: THREE.DoubleSide,
-      shininess: 100,
+      shininess: 30,
     });
 
     const cube = new THREE.Mesh(geometry, material);
